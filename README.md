@@ -44,17 +44,7 @@ When a new CSV file is uploaded to the `raw_data/` folder in S3, the pipeline is
 
 ## 📁 Repository Structure
 
-├── glue_jobs/
-│ ├── get_data_from_s3_raw.py # Main ETL logic
-│ ├── move_raw_data_to_archive.py # Archive raw data
-│ ├── update_data_to_dynamo.py # Upload to DynamoDB
-├── lambdas/
-│ └── trigger_glue_on_s3_event.py # Lambda trigger
-├── cloudformation/
-│ └── setup_res_glue_s3.yml # Infra setup
-├── data/
-│ └── startup_funding_sample.csv # Sample data
-└── README.md
+![ETL Pipeline Flow](images/flow_diagram.png)
 
 ---
 
